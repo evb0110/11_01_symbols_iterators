@@ -15,13 +15,13 @@ const magician = {
   health: 100,
   level: 2,
   attack: 50,
-  defence: 100
-}
+  defence: 100,
+};
 
 test('testing a team with two characters', () => {
   const team = new Team(bowman, magician);
   const arrResult = [];
-  for (let character of team) {
+  for (const character of team) {
     arrResult.push(character);
   }
 
@@ -29,7 +29,7 @@ test('testing a team with two characters', () => {
 });
 
 test('testing an empty team, should fail', () => {
-  const makeResult = () =>  new Team();
-  
+  const makeResult = () => new Team();
+
   expect(makeResult).toThrow('The team cannot be empty!');
 });

@@ -5,6 +5,7 @@ export default class Team {
     }
     this.characters = characters;
   }
+
   [Symbol.iterator]() {
     let current = 0;
     const last = this.characters.length;
@@ -14,15 +15,13 @@ export default class Team {
         if (current < last) {
           return {
             done: false,
-            value: this.characters[current++]
-          }
-        } else {
-          return {
-            done: true
-          }
+            value: this.characters[current++],
+          };
         }
-      }
-    }
+        return {
+          done: true,
+        };
+      },
+    };
   }
 }
-
