@@ -1,10 +1,10 @@
 {
-  "name": "10_02_async_await",
+  "name": "11_01_symbols_iterators",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evb0110/10_02_async_await"
+    "url": "https://github.com/evb0110/11_01_symbols_iterators"
   },
   "main": "index.js",
   "scripts": {
